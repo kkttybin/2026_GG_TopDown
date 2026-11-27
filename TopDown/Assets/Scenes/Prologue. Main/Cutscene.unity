@@ -237,11 +237,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cutscene
   lines:
   - speaker: 
-    text: "\uC624\uB798\uC804 \uC774\uB9C8\uC744\uC5D0\uB294"
+    text: "\uC6B0\uB9AC \uB9C8\uC744\uC5D0\uB294.."
     portrait: {fileID: -2363448843327527782, guid: bc517959d7953204b9ef0a18f06b5632, type: 3}
   - speaker: 
-    text: "\uADF8\uB7EC\uB358 \uC5B4\uB290\uB0A0..."
+    text: "\uB9E8\uB0A0 \uBE44\uAC00 \uC628\uB2E4"
     portrait: {fileID: -2078431040896989116, guid: aec8b5ca93985064aa6a6fb48bb9da8d, type: 3}
+  - speaker: 
+    text: "\uADF8\uB7EC\uB098 \uADF8\uB54C \uB9C8\uB2E4.."
+    portrait: {fileID: 0}
   - speaker: 
     text: 
     portrait: {fileID: 0}
