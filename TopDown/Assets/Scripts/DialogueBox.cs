@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;  
 public class DialogueBox : MonoBehaviour
 {
  public GameObject panel;
@@ -15,8 +16,10 @@ public class DialogueBox : MonoBehaviour
  private Talk current;
  private int index = 0;
  private bool choosing = false;
+ public Image portraitImage;
  void Update()
  {
+    if (Time.timeScale == 0f) { return; }
   Keyboard kb = Keyboard.current;
   if (choosing)
   {
@@ -43,6 +46,9 @@ public class DialogueBox : MonoBehaviour
   nameText.text = current.lines[index].speaker;
   bodyText.text = current.lines[index].text;
   bool last = index == current.lines.Length - 1;
+  Sprite face = current.lines[index].portrait;
+  portraitImage.sprite = face;
+  portraitImage.gameObject.SetActive(face != null);
   if (last && current.choice1 != "") { ShowChoices(); }
  }
  void Next()
